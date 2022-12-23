@@ -108,6 +108,18 @@ a:hover {
 
 .notif__unread {
   background-color: var(--very-light-grayish-blue);
+  position: relative;
+}
+
+.notif__unread p:first-child::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+  border-radius: 100%;
+  text-align: center;
+  margin: 0.4rem;
 }
 
 .avatar > img {
@@ -138,15 +150,15 @@ a:hover {
 
 .red__dot {
   display: none;
-  width: 8px;
+  /* width: 8px;
   height: 8px;
   background-color: var(--red);
   border-radius: 100%;
-  margin: 0.4rem;
+  margin: 0.4rem; */
 }
 
 .dot__active {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .notif__time {
