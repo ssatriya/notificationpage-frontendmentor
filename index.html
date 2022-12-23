@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="component">
+        <div class="header">
+          <div class="notif__header">
+            Notifications <span class="notif__numbers">3</span>
+          </div>
+          <button class="btn__mark">Mark all as read</button>
+        </div>
+        <ul class="notifications">
+          <li class="notif__detail notif__unread">
+            <div class="avatar">
+              <img
+                src="./assets/images/avatar-mark-webber.webp"
+                alt="Mark Webber"
+              />
+            </div>
+            <div class="notif__content">
+              <div class="notif__text">
+                <p class="notif__left">
+                  <a class="notif__user" href="">Mark Webber</a>&nbsp; is
+                  reacted to your recent post
+                  <a class="active__link" href="#"
+                    >&nbsp; My first tournament today!</a
+                  >
+                  <span class="red__dot dot__active"></span>
+                </p>
+              </div>
+              <div class="notif__time">1m ago</div>
+            </div>
+          </li>
+          <li class="notif__detail notif__unread">
+            <div class="avatar">
+              <img
+                src="./assets/images/avatar-angela-gray.webp"
+                alt="Angela Gray"
+              />
+            </div>
+            <div class="notif__content">
+              <div class="notif__text">
+                <p class="notif__left">
+                  <a class="notif__user" href="">Angela Gray</a>&nbsp; is
+                  followed you
+                  <span class="red__dot dot__active"></span>
+                </p>
+              </div>
+              <div class="notif__time">1m ago</div>
+            </div>
+          </li>
+          <li class="notif__detail notif__unread">
+            <div class="avatar">
+              <img
+                src="./assets/images/avatar-jacob-thompson.webp"
+                alt="Jacob Thompson"
+              />
+            </div>
+            <div class="notif__content">
+              <div class="notif__text">
+                <p class="notif__left">
+                  <a class="notif__user" href="#">Jacob Thompson</a>&nbsp; has
+                  joined your group
+                  <a class="active__link" href="#">&nbsp; Chess Club</a>
+                  <span class="red__dot dot__active"></span>
+                </p>
+              </div>
+              <div class="notif__time">1 day ago</div>
+            </div>
+          </li>
+          <li class="notif__detail">
+            <div class="avatar">
+              <img
+                src="./assets/images/avatar-rizky-hasanuddin.webp"
+                alt="Rizky Hasanuddin"
+              />
+            </div>
+            <div class="notif__content">
+              <div class="notif__text">
+                <p class="notif__left">
+                  <a class="notif__user" href="#">Rizky Hasanuddin</a>&nbsp;
+                  sent you a private message
+                  <span class="red__dot dot__active"></span>
+                </p>
+              </div>
+              <div class="notif__time">5 days ago</div>
+              <div class="private__message">
+                <p>
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  improving my game.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="notif__detail">
+            <div class="avatar">
+              <img
+                src="./assets/images/avatar-kimberly-smith.webp"
+                alt="Kimberly Smith"
+              />
+            </div>
+            <div class="notif__content">
+              <div class="notif__text">
+                <p class="notif__left">
+                  <a class="notif__user" href="#">Kimberly Smith</a>&nbsp;
+                  commented on your picture
+                  <span class="red__dot"></span>
+                </p>
+                <div class="notif__right">
+                  <div class="notif__img">
+                    <img
+                      src="./assets/images/image-chess.webp"
+                      alt="Playing Chess"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="notif__time">1 week ago</div>
+            </div>
+          </li>
+          <li class="notif__detail">
+            <div class="avatar">
+              <img
+                src="./assets/images/avatar-nathan-peterson.webp"
+                alt="Nathan Peterson"
+              />
+            </div>
+            <div class="notif__content">
+              <div class="notif__text">
+                <p class="notif__left">
+                  <a class="notif__user" href="#">Nathan Peterson</a>&nbsp;
+                  reacted to your recent post
+                  <a class="active__link" href="#">
+                    &nbsp; 5 end-game strategies to increase your win rate</a
+                  >
+
+                  <span class="red__dot"></span>
+                </p>
+              </div>
+              <div class="notif__time">2 weeks ago</div>
+            </div>
+          </li>
+          <li class="notif__detail">
+            <div class="avatar">
+              <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim" />
+            </div>
+            <div class="notif__content">
+              <div class="notif__text">
+                <p class="notif__left">
+                  <a class="notif__user" href="#">Anna Kim</a>&nbsp; left the
+                  group
+                  <a class="active__link" href="#">&nbsp; Chess Club</a>
+                  <span class="red__dot"></span>
+                </p>
+              </div>
+              <div class="notif__time">1 day ago</div>
+            </div>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/ssatriya">ssatriya</a>.
+      </div>
+    </footer>
+  </body>
+</html>
