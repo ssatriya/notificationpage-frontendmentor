@@ -103,7 +103,9 @@ a:hover {
 }
 
 .notif__left {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .notif__unread {
@@ -111,7 +113,7 @@ a:hover {
   position: relative;
 }
 
-.notif__unread p:first-child::after {
+.notif__unread .text:first-child::after {
   content: "";
   position: absolute;
   width: 8px;
